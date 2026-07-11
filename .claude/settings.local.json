@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(npx --yes create-next-app@latest scaffold-tmp --ts --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --use-npm --disable-git --yes)",
+      "Bash(mv scaffold-tmp/* scaffold-tmp/.* .)",
+      "Bash(rmdir scaffold-tmp *)",
+      "Bash(npm ls *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(node *)",
+      "Bash(nohup npm start)",
+      "Bash(curl -s -o /dev/null -w \"GET / -> %{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"GET /daily -> %{http_code}\\\\n\" http://localhost:3000/daily)",
+      "Bash(curl -s -o /dev/null -w \"GET /review -> %{http_code}\\\\n\" http://localhost:3000/review)",
+      "Bash(curl -s \"http://localhost:3000/api/export?format=csv\")",
+      "Bash(curl -s \"http://localhost:3000/api/export?format=json\")"
+    ]
+  }
+}
